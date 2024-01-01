@@ -1,0 +1,95 @@
+openapi: 3.0.0
+info:
+  title: Game Progress Buddy API
+  version: 1.0.0
+
+paths:
+  /game-insert/v1:
+    post:
+      summary: Register a new game master
+      operationId: registerGameMaster
+      requestBody:
+        description: Game master information
+        required: true
+        content:
+          application/json:
+            example:
+              name: "Example Game"
+              genre: "Adventure"
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              example:
+                message: "Game master registered successfully"
+
+
+# paths:
+#   /game-insert/v1:
+#     post:
+#       summary: Register a new game master
+#       operationId: registerGameMaster
+#       requestBody:
+#         description: Game master information
+#         required: true
+#         content:
+#           application/json:
+#             example:
+#               name: "Example Game"
+#               genre: "Adventure"
+#       responses:
+#         '200':
+#           description: Successful operation
+#           content:
+#             application/json:
+#               example:
+#                 message: "Game master registered successfully"
+
+#   /api/game-detail-insert:
+#     post:
+#       summary: Register a new game detail
+#       operationId: registerGameDetail
+#       requestBody:
+#         description: Game detail information
+#         required: true
+#         content:
+#           application/json:
+#             example:
+#               gameId: "12345"
+#               progress: "50%"
+#               status: "In Progress"
+#       responses:
+#         '200':
+#           description: Successful operation
+#           content:
+#             application/json:
+#               example:
+#                 message: "Game detail registered successfully"
+
+#   /api/game-detail-update:
+#     put:
+#       summary: Update a game detail
+#       operationId: updateGameDetail
+#       parameters:
+#         - name: gameId
+#           in: query
+#           description: ID of the game detail to update
+#           required: true
+#           schema:
+#             type: string
+#       requestBody:
+#         description: Updated game detail information
+#         required: true
+#         content:
+#           application/json:
+#             example:
+#               progress: "75%"
+#               status: "Completed"
+#       responses:
+#         '200':
+#           description: Successful operation
+#           content:
+#             application/json:
+#               example:
+#                 message: "Game detail updated successfully"
