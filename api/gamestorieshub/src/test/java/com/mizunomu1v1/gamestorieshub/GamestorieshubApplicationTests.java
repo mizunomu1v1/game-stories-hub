@@ -1,10 +1,10 @@
-package com.mizunomu1v1.api;
+package com.mizunomu1v1.gamestorieshub;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiApplicationTests {
+class GamestorieshubApplicationTests {
 
 	@Test
 	void contextLoads() {
